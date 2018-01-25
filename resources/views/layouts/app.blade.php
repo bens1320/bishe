@@ -9,7 +9,8 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>@yield('title', '') - 学生笔记分享网站</title>
-    <meta name="description" content="@yield('description', '学生笔记分享社区')" />
+    <meta name="description" content="@yield('description', setting('seo_description', '学生笔记分享社区'))" />
+    <meta name="keyword" content="@yield('keyword', setting('seo_keyword', '学习,社区,笔记,学习交流'))" />
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
